@@ -1,5 +1,5 @@
 // Javascript Study
-
+/*
 console.log('arroz');
 
 // Variables
@@ -18,7 +18,7 @@ if (a < 23) {
 } else {
   document.getElementById('h1').innerHTML = 'UOU, same age';
 }
-*/
+* /
 
 // Numbers
 
@@ -39,7 +39,7 @@ function fun() {
 // Call
 fun();
 
-/* funcition that takes in a name and return a text with the name */
+/* funcition that takes in a name and return a text with the name * /
 
 function greeting() {
   let name = prompt('What is your name?');
@@ -57,3 +57,16 @@ function sum(n1, n2) {
 }
 
 sum(10, 41);
+
+
+*/
+// DOM study
+
+// making element
+let newElement = document.createElement('input');
+
+// details of element
+// console.dir(newElement);
+
+// Add element in body
+document.body.appendChild(newElement);
