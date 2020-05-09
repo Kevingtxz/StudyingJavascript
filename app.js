@@ -76,7 +76,7 @@ document.body.appendChild(newElement);
 
 // setAttribute
 document.getElementById('myInput').setAttribute('value', 'water bottle');
-*/
+* /
 
 // textContent
 const h2Title = document.getElementById('title');
@@ -90,3 +90,22 @@ alert(h2Title.textContent);
 h2Title.innerHTML = '<em>em element</em>';
 
 alert(h2Title.textContent);
+*/
+
+// parent element
+const myList = document.getElementById('myList');
+
+// New List Item (<li>)
+
+let newListItem = document.createElement('li');
+newListItem.textContent = 'Other Child';
+
+const childList = ['3 child', '4 child', '5 child'];
+
+myList.appendChild(newListItem);
+
+for (let child of childList) {
+  let newListItem = document.createElement('li');
+  newListItem.textContent = child;
+  myList.appendChild(newListItem);
+}
