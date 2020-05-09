@@ -59,7 +59,7 @@ function sum(n1, n2) {
 sum(10, 41);
 
 
-*/
+* /
 // DOM study
 
 // making element
@@ -70,3 +70,23 @@ let newElement = document.createElement('input');
 
 // Add element in body
 document.body.appendChild(newElement);
+
+// 
+* /
+
+// setAttribute
+document.getElementById('myInput').setAttribute('value', 'water bottle');
+*/
+
+// textContent
+const h2Title = document.getElementById('title');
+
+h2Title.textContent = 'I love you';
+
+alert(h2Title.textContent);
+
+// innerHTML
+
+h2Title.innerHTML = '<em>em element</em>';
+
+alert(h2Title.textContent);
