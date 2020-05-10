@@ -109,7 +109,7 @@ for (let child of childList) {
   newListItem.textContent = child;
   myList.appendChild(newListItem);
 }
-*/
+* /
 // Document Fragment
 const myList = document.getElementById('myList');
 const docFrag = document.createDocumentFragment();
@@ -126,3 +126,17 @@ docFrag.appendChild(item2);
 console.log(docFrag);
 
 myList.appendChild(docFrag);
+*/
+const myPara = document.getElementById('myPara');
+
+myPara.classList.add('bold', 'big-font');
+myPara.classList.remove('bold');
+myPara.classList.replace('big-font', 'red-bg');
+
+myPara.classList.toggle('red-bg');
+myPara.classList.toggle('red-bg');
+
+console.log(myPara.classList.contains('white-text'));
+console.log(myPara.classList.contains('red-bg'));
+
+console.log(myPara.classList);
