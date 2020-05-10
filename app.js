@@ -90,7 +90,7 @@ alert(h2Title.textContent);
 h2Title.innerHTML = '<em>em element</em>';
 
 alert(h2Title.textContent);
-*/
+* /
 
 // parent element
 const myList = document.getElementById('myList');
@@ -109,3 +109,20 @@ for (let child of childList) {
   newListItem.textContent = child;
   myList.appendChild(newListItem);
 }
+*/
+// Document Fragment
+const myList = document.getElementById('myList');
+const docFrag = document.createDocumentFragment();
+
+let item1 = document.createElement('li');
+let item2 = document.createElement('li');
+
+item1.textContent = 'Flowers';
+item2.textContent = 'Swords';
+
+docFrag.appendChild(item1);
+docFrag.appendChild(item2);
+
+console.log(docFrag);
+
+myList.appendChild(docFrag);
